@@ -1,0 +1,22 @@
+{
+  "name": "tom-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mefellows/tom-stuff-api.git"
+  },
+  "author": "Tom Dickman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mefellows/tom-stuff-api/issues"
+  },
+  "homepage": "https://github.com/mefellows/tom-stuff-api#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
