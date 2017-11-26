@@ -13,12 +13,13 @@ The following command creates a new postgres database
 * Name of container: postgres
 
 ```shell
-docker run -d \
-  -p 5432:5432 \
-  -e POSTGRES_PASSWORD=password \
-  --name postgres \
-  --volume $(pwd)/db:/docker-entrypoint-initdb.d \
-  postgres
+npm run docker
+```
+
+## Cleaning and getting a new docker container
+
+```shell
+npm run clean
 ```
 
 ### Shell into a Postgres session
@@ -28,5 +29,5 @@ then run the command 'psql' with argument 'postgres'.
 You are now connected in the database schema with name 'postgres'.
 
 ```shell
-docker exec -it --user postgres postgres psql postgres
+npm run psql
 ```
