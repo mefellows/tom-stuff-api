@@ -1,12 +1,16 @@
 # Tom's stuff - API
 
-Run's the 
-
 `npm run server` should start your api on http://localhost:3000
+
+## Database schema
+
+Modify `db/schema.sql` to manage the SQL database. Scripts will be run in alphabetical order as per ["How to extend this image"](https://hub.docker.com/_/postgres/).
+
 ## Running Postgres
 
 ### Run the postgres docker container
-The following command creates a new postgres database
+The below command creates a new postgres database with following details:
+
 * User: postgres
 * Password: postgres
 * Open on port 5432 on your localhost
