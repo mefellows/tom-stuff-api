@@ -13,7 +13,12 @@ The following command creates a new postgres database
 * Name of container: postgres
 
 ```shell
-docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=password --name postgres postgres
+docker run -d \
+  -p 5432:5432 \
+  -e POSTGRES_PASSWORD=password \
+  --name postgres \
+  --volume $(pwd)/db:/docker-entrypoint-initdb.d \
+  postgres
 ```
 
 ### Shell into a Postgres session
